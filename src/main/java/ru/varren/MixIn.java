@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 /**
  * Created by Vestl_000 on 20.05.2016.
  */
-@NameBinding
+
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD, ElementType.TYPE})
 public @interface MixIn {}
