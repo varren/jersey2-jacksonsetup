@@ -1,0 +1,23 @@
+group 'jersey'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'jetty'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.22.2'
+    compile 'org.glassfish.jersey.containers:jersey-container-servlet-core:2.22.2'
+    compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.22.2'
+    compile 'org.glassfish.jersey.containers:jersey-container-jetty-http:2.22.2'
+
+    compile 'org.eclipse.jetty:jetty-server:9.1.0.M0'
+    compile 'org.eclipse.jetty:jetty-servlet:9.1.0.M0'
+}
